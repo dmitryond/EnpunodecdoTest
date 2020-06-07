@@ -47,7 +47,7 @@ struct Constants {
          "Y u no work??!"]
     
     // Numbers
-    static let timeBeforeNotification: Double = 1.5
+    static let timeBeforeNotification: Double = 15
 //    static let typewriterDelay: Double = 0.05
     static let typewriterSpeed: Double = 50
     
