@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E11D8093248B9A7C0047020A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11D8092248B9A7C0047020A /* LaunchScreen.storyboard */; };
+		E13131322487B2F500907A57 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13131302487B2F500907A57 /* Constants.swift */; };
+		E13131332487B2F500907A57 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13131312487B2F500907A57 /* Utils.swift */; };
+		E13131352487C8B600907A57 /* EncryptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13131342487C8B600907A57 /* EncryptionManager.swift */; };
+		E1313139248A940500907A57 /* NotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1313138248A940500907A57 /* NotificationsManager.swift */; };
+		E131313B248ADE1200907A57 /* DecryptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E131313A248ADE1200907A57 /* DecryptionViewController.swift */; };
+		E131313D248ADE2600907A57 /* DecryptionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E131313C248ADE2600907A57 /* DecryptionViewController.storyboard */; };
+		E131313F248ADE9900907A57 /* DecryptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E131313E248ADE9900907A57 /* DecryptionViewModel.swift */; };
+		E1313147248B970E00907A57 /* EncryptedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1313146248B970E00907A57 /* EncryptedMessage.swift */; };
+		E1313149248B973200907A57 /* EncryptionManagerReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1313148248B973200907A57 /* EncryptionManagerReport.swift */; };
+		E131314C248B978600907A57 /* EncryptionManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E131314B248B978600907A57 /* EncryptionManagerDelegate.swift */; };
+		E1997A4B24877B3B00298927 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1997A4A24877B3B00298927 /* AppDelegate.swift */; };
+		E1997A4D24877B3B00298927 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1997A4C24877B3B00298927 /* SceneDelegate.swift */; };
+		E1997A5424877B3D00298927 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1997A5324877B3D00298927 /* Assets.xcassets */; };
+		E1997A6224877B3D00298927 /* EnPuNoDecDOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1997A6124877B3D00298927 /* EnPuNoDecDOTests.swift */; };
+		E1997A6D24877B3D00298927 /* EnPuNoDecDOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1997A6C24877B3D00298927 /* EnPuNoDecDOUITests.swift */; };
+		E1997A7C248780FD00298927 /* EncryptionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1997A7B248780FD00298927 /* EncryptionViewController.storyboard */; };
+		E1997A832487934200298927 /* EncryptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1997A822487934200298927 /* EncryptionViewController.swift */; };
+		E1997A87248798BE00298927 /* EncryptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1997A86248798BE00298927 /* EncryptionViewModel.swift */; };
+		E1D77625248BE97A00FF3EFA /* AnimatedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D77624248BE97A00FF3EFA /* AnimatedTextView.swift */; };
+		E1D77627248C258200FF3EFA /* AnimatedTextViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D77626248C258200FF3EFA /* AnimatedTextViewModel.swift */; };
+		E1D77629248C34B700FF3EFA /* AnimatedTextViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D77628248C34B700FF3EFA /* AnimatedTextViewDelegate.swift */; };
+		E1D7762C248C64A100FF3EFA /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D7762B248C64A100FF3EFA /* LocalAuthentication.framework */; };
+		E1D7762E248CD22400FF3EFA /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D7762D248CD22400FF3EFA /* DesignableView.swift */; };
+		E1D77630248CD2FB00FF3EFA /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D7762F248CD2FB00FF3EFA /* DesignableButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1997A5E24877B3D00298927 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1997A3F24877B3B00298927 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1997A4624877B3B00298927;
+			remoteInfo = EnPuNoDecDO;
+		};
+		E1997A6924877B3D00298927 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1997A3F24877B3B00298927 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1997A4624877B3B00298927;
+			remoteInfo = EnPuNoDecDO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E11D8092248B9A7C0047020A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E13131302487B2F500907A57 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E13131312487B2F500907A57 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		E13131342487C8B600907A57 /* EncryptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionManager.swift; sourceTree = "<group>"; };
+		E1313138248A940500907A57 /* NotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsManager.swift; sourceTree = "<group>"; };
+		E131313A248ADE1200907A57 /* DecryptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecryptionViewController.swift; sourceTree = "<group>"; };
+		E131313C248ADE2600907A57 /* DecryptionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DecryptionViewController.storyboard; sourceTree = "<group>"; };
+		E131313E248ADE9900907A57 /* DecryptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecryptionViewModel.swift; sourceTree = "<group>"; };
+		E1313146248B970E00907A57 /* EncryptedMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptedMessage.swift; sourceTree = "<group>"; };
+		E1313148248B973200907A57 /* EncryptionManagerReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionManagerReport.swift; sourceTree = "<group>"; };
+		E131314B248B978600907A57 /* EncryptionManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionManagerDelegate.swift; sourceTree = "<group>"; };
+		E1997A4724877B3B00298927 /* EnPuNoDecDO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnPuNoDecDO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1997A4A24877B3B00298927 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E1997A4C24877B3B00298927 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E1997A5324877B3D00298927 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1997A5824877B3D00298927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1997A5D24877B3D00298927 /* EnPuNoDecDOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnPuNoDecDOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1997A6124877B3D00298927 /* EnPuNoDecDOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnPuNoDecDOTests.swift; sourceTree = "<group>"; };
+		E1997A6324877B3D00298927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1997A6824877B3D00298927 /* EnPuNoDecDOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnPuNoDecDOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1997A6C24877B3D00298927 /* EnPuNoDecDOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnPuNoDecDOUITests.swift; sourceTree = "<group>"; };
+		E1997A6E24877B3D00298927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1997A7A24877CE200298927 /* EnPuNoDecDO.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EnPuNoDecDO.entitlements; sourceTree = "<group>"; };
+		E1997A7B248780FD00298927 /* EncryptionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EncryptionViewController.storyboard; sourceTree = "<group>"; };
+		E1997A822487934200298927 /* EncryptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionViewController.swift; sourceTree = "<group>"; };
+		E1997A86248798BE00298927 /* EncryptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionViewModel.swift; sourceTree = "<group>"; };
+		E1D77624248BE97A00FF3EFA /* AnimatedTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTextView.swift; sourceTree = "<group>"; };
+		E1D77626248C258200FF3EFA /* AnimatedTextViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTextViewModel.swift; sourceTree = "<group>"; };
+		E1D77628248C34B700FF3EFA /* AnimatedTextViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTextViewDelegate.swift; sourceTree = "<group>"; };
+		E1D7762B248C64A100FF3EFA /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		E1D7762D248CD22400FF3EFA /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		E1D7762F248CD2FB00FF3EFA /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1997A4424877B3B00298927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D7762C248C64A100FF3EFA /* LocalAuthentication.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1997A5A24877B3D00298927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1997A6524877B3D00298927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E131314A248B977000907A57 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E131314B248B978600907A57 /* EncryptionManagerDelegate.swift */,
+				E1D77628248C34B700FF3EFA /* AnimatedTextViewDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E1997A3E24877B3B00298927 = {
+			isa = PBXGroup;
+			children = (
+				E1997A4924877B3B00298927 /* EnPuNoDecDO */,
+				E1997A6024877B3D00298927 /* EnPuNoDecDOTests */,
+				E1997A6B24877B3D00298927 /* EnPuNoDecDOUITests */,
+				E1997A4824877B3B00298927 /* Products */,
+				E1D7762A248C64A100FF3EFA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E1997A4824877B3B00298927 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1997A4724877B3B00298927 /* EnPuNoDecDO.app */,
+				E1997A5D24877B3D00298927 /* EnPuNoDecDOTests.xctest */,
+				E1997A6824877B3D00298927 /* EnPuNoDecDOUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1997A4924877B3B00298927 /* EnPuNoDecDO */ = {
+			isa = PBXGroup;
+			children = (
+				E131314A248B977000907A57 /* Protocols */,
+				E1997A8024878BC300298927 /* Managers */,
+				E1997A7F24878BA500298927 /* Models */,
+				E1997A7D2487874100298927 /* MVVM */,
+				E1997A7E2487877400298927 /* Auxiliary */,
+				E1997A8124878BF000298927 /* Interfaces */,
+				E1997A7A24877CE200298927 /* EnPuNoDecDO.entitlements */,
+				E1997A4A24877B3B00298927 /* AppDelegate.swift */,
+				E1997A4C24877B3B00298927 /* SceneDelegate.swift */,
+				E1997A5324877B3D00298927 /* Assets.xcassets */,
+				E1997A5824877B3D00298927 /* Info.plist */,
+			);
+			path = EnPuNoDecDO;
+			sourceTree = "<group>";
+		};
+		E1997A6024877B3D00298927 /* EnPuNoDecDOTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1997A6124877B3D00298927 /* EnPuNoDecDOTests.swift */,
+				E1997A6324877B3D00298927 /* Info.plist */,
+			);
+			path = EnPuNoDecDOTests;
+			sourceTree = "<group>";
+		};
+		E1997A6B24877B3D00298927 /* EnPuNoDecDOUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E1997A6C24877B3D00298927 /* EnPuNoDecDOUITests.swift */,
+				E1997A6E24877B3D00298927 /* Info.plist */,
+			);
+			path = EnPuNoDecDOUITests;
+			sourceTree = "<group>";
+		};
+		E1997A7D2487874100298927 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				E1997A822487934200298927 /* EncryptionViewController.swift */,
+				E1997A86248798BE00298927 /* EncryptionViewModel.swift */,
+				E131313A248ADE1200907A57 /* DecryptionViewController.swift */,
+				E131313E248ADE9900907A57 /* DecryptionViewModel.swift */,
+				E1D77624248BE97A00FF3EFA /* AnimatedTextView.swift */,
+				E1D77626248C258200FF3EFA /* AnimatedTextViewModel.swift */,
+				E1D7762D248CD22400FF3EFA /* DesignableView.swift */,
+				E1D7762F248CD2FB00FF3EFA /* DesignableButton.swift */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		E1997A7E2487877400298927 /* Auxiliary */ = {
+			isa = PBXGroup;
+			children = (
+				E13131302487B2F500907A57 /* Constants.swift */,
+				E13131312487B2F500907A57 /* Utils.swift */,
+			);
+			path = Auxiliary;
+			sourceTree = "<group>";
+		};
+		E1997A7F24878BA500298927 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E1313146248B970E00907A57 /* EncryptedMessage.swift */,
+				E1313148248B973200907A57 /* EncryptionManagerReport.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E1997A8024878BC300298927 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E1313138248A940500907A57 /* NotificationsManager.swift */,
+				E13131342487C8B600907A57 /* EncryptionManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		E1997A8124878BF000298927 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				E11D8092248B9A7C0047020A /* LaunchScreen.storyboard */,
+				E1997A7B248780FD00298927 /* EncryptionViewController.storyboard */,
+				E131313C248ADE2600907A57 /* DecryptionViewController.storyboard */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		E1D7762A248C64A100FF3EFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1D7762B248C64A100FF3EFA /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1997A4624877B3B00298927 /* EnPuNoDecDO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1997A7124877B3D00298927 /* Build configuration list for PBXNativeTarget "EnPuNoDecDO" */;
+			buildPhases = (
+				E1997A4324877B3B00298927 /* Sources */,
+				E1997A4424877B3B00298927 /* Frameworks */,
+				E1997A4524877B3B00298927 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EnPuNoDecDO;
+			productName = EnPuNoDecDO;
+			productReference = E1997A4724877B3B00298927 /* EnPuNoDecDO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1997A5C24877B3D00298927 /* EnPuNoDecDOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1997A7424877B3D00298927 /* Build configuration list for PBXNativeTarget "EnPuNoDecDOTests" */;
+			buildPhases = (
+				E1997A5924877B3D00298927 /* Sources */,
+				E1997A5A24877B3D00298927 /* Frameworks */,
+				E1997A5B24877B3D00298927 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1997A5F24877B3D00298927 /* PBXTargetDependency */,
+			);
+			name = EnPuNoDecDOTests;
+			productName = EnPuNoDecDOTests;
+			productReference = E1997A5D24877B3D00298927 /* EnPuNoDecDOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E1997A6724877B3D00298927 /* EnPuNoDecDOUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1997A7724877B3D00298927 /* Build configuration list for PBXNativeTarget "EnPuNoDecDOUITests" */;
+			buildPhases = (
+				E1997A6424877B3D00298927 /* Sources */,
+				E1997A6524877B3D00298927 /* Frameworks */,
+				E1997A6624877B3D00298927 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1997A6A24877B3D00298927 /* PBXTargetDependency */,
+			);
+			name = EnPuNoDecDOUITests;
+			productName = EnPuNoDecDOUITests;
+			productReference = E1997A6824877B3D00298927 /* EnPuNoDecDOUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1997A3F24877B3B00298927 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Dmitry Ondrin";
+				TargetAttributes = {
+					E1997A4624877B3B00298927 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					E1997A5C24877B3D00298927 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = E1997A4624877B3B00298927;
+					};
+					E1997A6724877B3D00298927 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = E1997A4624877B3B00298927;
+					};
+				};
+			};
+			buildConfigurationList = E1997A4224877B3B00298927 /* Build configuration list for PBXProject "EnPuNoDecDO" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1997A3E24877B3B00298927;
+			productRefGroup = E1997A4824877B3B00298927 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1997A4624877B3B00298927 /* EnPuNoDecDO */,
+				E1997A5C24877B3D00298927 /* EnPuNoDecDOTests */,
+				E1997A6724877B3D00298927 /* EnPuNoDecDOUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1997A4524877B3B00298927 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1997A7C248780FD00298927 /* EncryptionViewController.storyboard in Resources */,
+				E11D8093248B9A7C0047020A /* LaunchScreen.storyboard in Resources */,
+				E131313D248ADE2600907A57 /* DecryptionViewController.storyboard in Resources */,
+				E1997A5424877B3D00298927 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1997A5B24877B3D00298927 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1997A6624877B3D00298927 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1997A4324877B3B00298927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E131314C248B978600907A57 /* EncryptionManagerDelegate.swift in Sources */,
+				E131313F248ADE9900907A57 /* DecryptionViewModel.swift in Sources */,
+				E1D77627248C258200FF3EFA /* AnimatedTextViewModel.swift in Sources */,
+				E13131322487B2F500907A57 /* Constants.swift in Sources */,
+				E1997A4B24877B3B00298927 /* AppDelegate.swift in Sources */,
+				E1313147248B970E00907A57 /* EncryptedMessage.swift in Sources */,
+				E131313B248ADE1200907A57 /* DecryptionViewController.swift in Sources */,
+				E1D77629248C34B700FF3EFA /* AnimatedTextViewDelegate.swift in Sources */,
+				E13131352487C8B600907A57 /* EncryptionManager.swift in Sources */,
+				E1997A832487934200298927 /* EncryptionViewController.swift in Sources */,
+				E1313139248A940500907A57 /* NotificationsManager.swift in Sources */,
+				E1997A4D24877B3B00298927 /* SceneDelegate.swift in Sources */,
+				E1997A87248798BE00298927 /* EncryptionViewModel.swift in Sources */,
+				E1313149248B973200907A57 /* EncryptionManagerReport.swift in Sources */,
+				E1D77625248BE97A00FF3EFA /* AnimatedTextView.swift in Sources */,
+				E13131332487B2F500907A57 /* Utils.swift in Sources */,
+				E1D7762E248CD22400FF3EFA /* DesignableView.swift in Sources */,
+				E1D77630248CD2FB00FF3EFA /* DesignableButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1997A5924877B3D00298927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1997A6224877B3D00298927 /* EnPuNoDecDOTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1997A6424877B3D00298927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1997A6D24877B3D00298927 /* EnPuNoDecDOUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1997A5F24877B3D00298927 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1997A4624877B3B00298927 /* EnPuNoDecDO */;
+			targetProxy = E1997A5E24877B3D00298927 /* PBXContainerItemProxy */;
+		};
+		E1997A6A24877B3D00298927 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1997A4624877B3B00298927 /* EnPuNoDecDO */;
+			targetProxy = E1997A6924877B3D00298927 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E1997A6F24877B3D00298927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E1997A7024877B3D00298927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1997A7224877B3D00298927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EnPuNoDecDO/EnPuNoDecDO.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V5A9EPCLBV;
+				INFOPLIST_FILE = EnPuNoDecDO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DmitryOndrin.EnPuNoDecDO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1997A7324877B3D00298927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EnPuNoDecDO/EnPuNoDecDO.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V5A9EPCLBV;
+				INFOPLIST_FILE = EnPuNoDecDO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DmitryOndrin.EnPuNoDecDO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E1997A7524877B3D00298927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V5A9EPCLBV;
+				INFOPLIST_FILE = EnPuNoDecDOTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DmitryOndrin.EnPuNoDecDOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnPuNoDecDO.app/EnPuNoDecDO";
+			};
+			name = Debug;
+		};
+		E1997A7624877B3D00298927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V5A9EPCLBV;
+				INFOPLIST_FILE = EnPuNoDecDOTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DmitryOndrin.EnPuNoDecDOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnPuNoDecDO.app/EnPuNoDecDO";
+			};
+			name = Release;
+		};
+		E1997A7824877B3D00298927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V5A9EPCLBV;
+				INFOPLIST_FILE = EnPuNoDecDOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DmitryOndrin.EnPuNoDecDOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EnPuNoDecDO;
+			};
+			name = Debug;
+		};
+		E1997A7924877B3D00298927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V5A9EPCLBV;
+				INFOPLIST_FILE = EnPuNoDecDOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DmitryOndrin.EnPuNoDecDOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EnPuNoDecDO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1997A4224877B3B00298927 /* Build configuration list for PBXProject "EnPuNoDecDO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1997A6F24877B3D00298927 /* Debug */,
+				E1997A7024877B3D00298927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1997A7124877B3D00298927 /* Build configuration list for PBXNativeTarget "EnPuNoDecDO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1997A7224877B3D00298927 /* Debug */,
+				E1997A7324877B3D00298927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1997A7424877B3D00298927 /* Build configuration list for PBXNativeTarget "EnPuNoDecDOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1997A7524877B3D00298927 /* Debug */,
+				E1997A7624877B3D00298927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1997A7724877B3D00298927 /* Build configuration list for PBXNativeTarget "EnPuNoDecDOUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1997A7824877B3D00298927 /* Debug */,
+				E1997A7924877B3D00298927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1997A3F24877B3B00298927 /* Project object */;
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zTp-m2-Ckc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Decryption View Controller-->
+        <scene sceneID="b1T-eN-Zv0">
+            <objects>
+                <viewController restorationIdentifier="DecryptionViewController" storyboardIdentifier="DecryptionViewController" id="zTp-m2-Ckc" customClass="DecryptionViewController" customModule="EnPuNoDecDO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vhy-vw-Bf5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwQ-8W-555" userLabel="mainTextView">
+                                <rect key="frame" x="20" y="0.0" width="374" height="448"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ojD-lx-cha" userLabel="debugTextView" customClass="AnimatedTextView" customModule="EnPuNoDecDO" customModuleProvider="target">
+                                <rect key="frame" x="20" y="456" width="374" height="440"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ojD-lx-cha" firstAttribute="top" secondItem="iwQ-8W-555" secondAttribute="bottom" constant="8" id="4Uo-Tb-JOO"/>
+                            <constraint firstAttribute="centerY" secondItem="iwQ-8W-555" secondAttribute="bottom" id="NbQ-yL-Um6"/>
+                            <constraint firstItem="iwQ-8W-555" firstAttribute="leading" secondItem="Vhy-vw-Bf5" secondAttribute="leading" constant="20" id="Oor-xz-xuS"/>
+                            <constraint firstItem="iwQ-8W-555" firstAttribute="top" secondItem="Vhy-vw-Bf5" secondAttribute="top" id="S7h-gL-KZT"/>
+                            <constraint firstItem="ojD-lx-cha" firstAttribute="leading" secondItem="iwQ-8W-555" secondAttribute="leading" id="V09-Cf-zhC"/>
+                            <constraint firstItem="ojD-lx-cha" firstAttribute="trailing" secondItem="iwQ-8W-555" secondAttribute="trailing" id="ct3-Uj-5AI"/>
+                            <constraint firstAttribute="bottom" secondItem="ojD-lx-cha" secondAttribute="bottom" id="fuO-Cz-WFB"/>
+                            <constraint firstAttribute="trailing" secondItem="iwQ-8W-555" secondAttribute="trailing" constant="20" id="s8P-qk-KwG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="debugTextView" destination="ojD-lx-cha" id="ZY9-VU-VDc"/>
+                        <outlet property="mainTextView" destination="iwQ-8W-555" id="SgG-H1-u4J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="017-Xe-4Wh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="85.714285714285708"/>
+        </scene>
+    </scenes>
+</document>
